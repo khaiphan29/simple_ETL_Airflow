@@ -1,0 +1,80 @@
+promotion_id,promotion_name,media_type,cost,start_date,end_date
+0,No Promotion,No Media,0.0,,
+1,High Roller Savings,Product Attachment,14435.0,1996-01-03,1996-01-06
+2,Green Light Special,Product Attachment,8907.0,1996-01-18,1996-01-20
+3,Wallet Savers,Radio,12512.0,1996-02-02,1996-02-05
+4,Weekend Markdown,In-Store Coupon,11256.0,1996-02-13,1996-02-15
+5,Bag Stuffers,"Sunday Paper, Radio",12275.0,1996-02-28,1996-03-01
+6,Save-It Sale,Daily Paper,9472.0,1996-03-14,1996-03-16
+7,Fantastic Discounts,"Sunday Paper, Radio, TV",14278.0,1996-03-29,1996-04-02
+8,Price Winners,"Sunday Paper, Radio",14731.0,1996-04-10,1996-04-13
+9,Dimes Off,Daily Paper,14065.0,1996-04-26,1996-04-29
+10,Green Light Special,"Sunday Paper, Radio",9298.0,1996-05-08,1996-05-09
+11,Dollar Cutters,"Daily Paper, Radio, TV",5306.0,1996-05-24,1996-05-25
+12,Three for One,TV,14812.0,1996-06-06,1996-06-09
+13,Price Winners,Cash Register Handout,11674.0,1996-06-19,1996-06-22
+14,Big Promo,Street Handout,14945.0,1996-07-03,1996-07-07
+15,Save-It Sale,"Sunday Paper, Radio",6842.0,1996-07-18,1996-07-22
+16,Sale Winners,"Sunday Paper, Radio",14615.0,1996-08-02,1996-08-03
+17,Savings Galore,Cash Register Handout,13694.0,1996-08-16,1996-08-17
+18,Super Savers,"Daily Paper, Radio",12346.0,1996-08-27,1996-08-30
+19,Tip Top Savings,"Daily Paper, Radio",8099.0,1996-09-10,1996-09-13
+20,Sale Winners,Street Handout,11024.0,1996-09-26,1996-09-28
+21,Price Winners,Cash Register Handout,14976.0,1996-10-10,1996-10-12
+22,Super Duper Savers,Radio,11665.0,1996-10-24,1996-10-28
+23,Super Duper Savers,"Daily Paper, Radio",13307.0,1996-11-07,1996-11-10
+24,Best Savings,Sunday Paper,10597.0,1996-11-21,1996-11-22
+25,Price Winners,Street Handout,9422.0,1996-12-04,1996-12-07
+26,Price Winners,Product Attachment,12767.0,1996-12-18,1996-12-21
+27,Price Cutters,Radio,5611.0,1997-01-02,1997-01-05
+28,Shelf Clearing Days,Bulk Mail,14609.0,1997-01-15,1997-01-18
+29,Green Light Special,Cash Register Handout,8307.0,1997-01-30,1997-02-02
+30,Unbeatable Price Savers,In-Store Coupon,8414.0,1997-02-13,1997-02-16
+31,You Save Days,"Daily Paper, Radio",9802.0,1997-02-28,1997-03-02
+32,I Cant Believe It Sale,Product Attachment,7854.0,1997-03-14,1997-03-15
+33,Shelf Emptiers,Daily Paper,6425.0,1997-03-28,1997-03-31
+34,Wallet Savers,Cash Register Handout,11913.0,1997-04-10,1997-04-14
+35,Mystery Sale,Daily Paper,14502.0,1997-04-23,1997-04-26
+36,Go For It,"Daily Paper, Radio, TV",14263.0,1997-05-09,1997-05-11
+37,Go For It,Street Handout,14264.0,1997-05-20,1997-05-23
+38,Dimes Off,Radio,7789.0,1997-06-05,1997-06-07
+39,Dollar Days,Sunday Paper,8924.0,1997-06-19,1997-06-21
+40,Super Savers,Bulk Mail,10393.0,1997-07-03,1997-07-06
+41,Money Grabbers,"Sunday Paper, Radio, TV",8710.0,1997-07-17,1997-07-19
+42,Two Day Sale,Bulk Mail,7616.0,1997-07-31,1997-08-04
+43,Green Light Special,Daily Paper,7296.0,1997-08-14,1997-08-17
+44,Double Down Sale,"Daily Paper, Radio",13130.0,1997-08-27,1997-08-29
+45,Price Slashers,"Daily Paper, Radio, TV",13664.0,1997-09-09,1997-09-10
+46,Weekend Markdown,Daily Paper,10607.0,1997-09-25,1997-09-28
+47,Sales Galore,Street Handout,12734.0,1997-10-07,1997-10-08
+48,Dollar Days,Daily Paper,10277.0,1997-10-23,1997-10-26
+49,Bag Stuffers,Bulk Mail,5684.0,1997-11-05,1997-11-06
+50,Two Day Sale,In-Store Coupon,8008.0,1997-11-21,1997-11-23
+51,Price Smashers,Sunday Paper,7433.0,1997-12-03,1997-12-06
+52,Big Promo,Radio,6686.0,1997-12-18,1997-12-22
+53,Price Slashers,TV,6966.0,1997-12-30,1998-01-01
+54,Two Day Sale,Radio,7327.0,1998-01-14,1998-01-17
+55,Price Slashers,Street Handout,5297.0,1998-01-28,1998-01-30
+56,Price Cutters,Street Handout,6258.0,1998-02-10,1998-02-13
+57,Sale Winners,"Daily Paper, Radio, TV",8756.0,1998-02-26,1998-03-02
+58,Price Winners,Sunday Paper,11219.0,1998-03-12,1998-03-15
+59,Price Winners,Cash Register Handout,10390.0,1998-03-26,1998-03-30
+60,Price Destroyers,Product Attachment,13060.0,1998-04-09,1998-04-12
+61,Price Destroyers,TV,10430.0,1998-04-21,1998-04-22
+62,Sales Days,Product Attachment,14209.0,1998-05-07,1998-05-10
+63,Dollar Cutters,Bulk Mail,11926.0,1998-05-21,1998-05-23
+64,Bye Bye Baby,TV,6305.0,1998-06-03,1998-06-07
+65,Green Light Special,"Sunday Paper, Radio, TV",8548.0,1998-06-18,1998-06-22
+66,Price Winners,Street Handout,10364.0,1998-07-03,1998-07-06
+67,Price Winners,"Sunday Paper, Radio, TV",6626.0,1998-07-15,1998-07-17
+68,Savings Galore,Sunday Paper,12714.0,1998-07-29,1998-07-31
+69,Price Destroyers,TV,11076.0,1998-08-12,1998-08-14
+70,Two Day Sale,"Daily Paper, Radio, TV",10929.0,1998-08-27,1998-08-30
+71,Coupon Spectacular,Daily Paper,5736.0,1998-09-08,1998-09-09
+72,Wallet Savers,Sunday Paper,13533.0,1998-09-23,1998-09-27
+73,Shelf Clearing Days,TV,5522.0,1998-10-06,1998-10-10
+74,Savings Galore,TV,10756.0,1998-10-21,1998-10-23
+75,Save-It Sale,In-Store Coupon,6763.0,1998-11-06,1998-11-08
+76,Price Slashers,"Daily Paper, Radio",6270.0,1998-11-20,1998-11-23
+77,Double Down Sale,Radio,13132.0,1998-12-01,1998-12-04
+78,Mystery Sale,"Sunday Paper, Radio",13747.0,1998-12-16,1998-12-17
