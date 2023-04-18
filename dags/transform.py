@@ -37,6 +37,8 @@ def transform_customer(data_df):
     #change position of age_category column
     temp_column = data_df.pop('age_category')
     data_df.insert(4, 'age_category', temp_column)
+    #add effective_date
+    data_df['effective_date'] = datetime.now().strftime("%Y-%m-%d")
 
     file_name = "processed_customers.csv"
     file_path = CUR_DIR + '/temp_data/' + file_name
@@ -51,6 +53,10 @@ def transform_product(product_df: DataFrame, product_class_df: DataFrame):
     product_df = product_df.merge(product_class_df, how="inner", on=['product_class_id'])
     product_df = product_df.drop(columns=['product_class_id'])
 
+    #add effective_date
+    product_df['effective_date'] = datetime.now().strftime("%Y-%m-%d")
+    product_df = product_df.sort_values(by=['product_id'])
+
     file_name = "processed_products.csv"
     file_path = CUR_DIR + '/temp_data/' + file_name
     product_df.to_csv(file_path, index=False)
@@ -62,6 +68,9 @@ def transform_promotion(promotion_df: DataFrame):
     promotion_df = promotion_df[promotion_df['promotion_district_id'].isin(options)]
     promotion_df = promotion_df.drop(columns=['promotion_district_id'])
 
+    #add effective_date
+    promotion_df['effective_date'] = datetime.now().strftime("%Y-%m-%d")
+
     file_name = "processed_promotions.csv"
     file_path = CUR_DIR + '/temp_data/' + file_name
     promotion_df.to_csv(file_path, index=False)
@@ -71,6 +80,9 @@ def transform_promotion(promotion_df: DataFrame):
 def transform_store(store_df: DataFrame):
     store_df = store_df.drop(columns=['region_id'])
 
+    #add effective_date
+    store_df['effective_date'] = datetime.now().strftime("%Y-%m-%d")
+
     file_name = "processed_stores.csv"
     file_path = CUR_DIR + '/temp_data/' + file_name
     store_df.to_csv(file_path, index=False)
@@ -79,6 +91,9 @@ def transform_store(store_df: DataFrame):
 
 def transform_warehouse(warehouse_df: DataFrame):
     warehouse_df = warehouse_df.drop(columns=['warehouse_class_id'])
+
+    #add effective_date
+    warehouse_df['effective_date'] = datetime.now().strftime("%Y-%m-%d")
     
     file_name = "processed_warehouses.csv"
     file_path = CUR_DIR + '/temp_data/' + file_name
@@ -115,10 +130,10 @@ def process_inventory(inventory_df: DataFrame, time_df: DataFrame, promotion_df:
             end_time = datetime.strptime(row['end_date'], "%Y-%m-%d")
             if (inventory_time >= start_time) and (inventory_time <= end_time):
                 found = True
-                promotion_id_list.append(row['promotion_id'])
+                promotion_id_list.append(row['promotion_id'] + 1)
                 break
         if not found: 
-            promotion_id_list.append(0)
+            promotion_id_list.append(1)
     
     
     #promotion_id_dict = {'promotion_id': promotion_id_list}
@@ -133,6 +148,8 @@ def transform_concat_inventory(paths_to_csv: str, path_to_promotion: str):
 
     df1 = process_inventory(inv97_df, time_df, proc_promotion_df)
     result_df = pd.concat([df1, process_inventory(inv98_df, time_df, proc_promotion_df)], axis=0)
+    result_df['store_id'] += 1 
+    result_df.rename(columns = {'product_id':'product_key', 'warehouse_id':'warehouse_key', 'store_id':'store_key', 'promotion_id':'promotion_key'}, inplace = True)
 
     file_name = "processed_invetory.csv"
     file_path = CUR_DIR + '/temp_data/' + file_name

@@ -39,7 +39,7 @@ customers_dict = {'insert_date': str(datetime.now()),
                        'destination_connection': 'postgresql',
                        'destination_schema': 'inventory_dwh',
                        'destination_table': 'customers', 
-                       'target_fields': 'customer_id, city, country, age, age_category, yearly_income, gender, total_children, education, occupation'}
+                       'target_fields': 'customer_id, city, country, age, age_category, yearly_income, gender, total_children, education, occupation, effective_date'}
 list_of_dict.append(customers_dict)
 
 promotions_dict = {'insert_date': str(datetime.now()), 
@@ -54,7 +54,7 @@ promotions_dict = {'insert_date': str(datetime.now()),
                        'destination_connection': 'postgresql',
                        'destination_schema': 'inventory_dwh',
                        'destination_table': 'promotions', 
-                       'target_fields': 'promotion_id, promotion_name, media_type, cost, start_date, end_date'}
+                       'target_fields': 'promotion_id, promotion_name, media_type, cost, start_date, end_date, effective_date'}
 list_of_dict.append(promotions_dict)
 
 
@@ -70,7 +70,7 @@ products_dict = {'insert_date': str(datetime.now()),
                        'destination_connection': 'postgresql',
                        'destination_schema': 'inventory_dwh',
                        'destination_table': 'products', 
-                       'target_fields': 'product_id, brand_name, product_name, sku, srp, gross_weight, net_weight, recyclable_package, low_fat, units_per_case, cases_per_pallet, shelf_width, shelf_height, shelf_depth, product_subcategory, product_category, product_department, product_family'}
+                       'target_fields': 'product_id, brand_name, product_name, sku, srp, gross_weight, net_weight, recyclable_package, low_fat, units_per_case, cases_per_pallet, shelf_width, shelf_height, shelf_depth, product_subcategory, product_category, product_department, product_family, effective_date'}
 list_of_dict.append(products_dict)
 
 products_class_dict = {'insert_date': str(datetime.now()), 
@@ -101,7 +101,7 @@ stores_dict = {'insert_date': str(datetime.now()),
                        'destination_connection': 'postgresql',
                        'destination_schema': 'inventory_dwh',
                        'destination_table': 'stores', 
-                       'target_fields': 'store_id, store_type, store_name, store_number, store_street_address, store_city, store_state, store_postal_code, store_country, store_manager, store_phone, store_fax, first_opened_date, last_remodel_date, store_sqft,grocery_sqft, frozen_sqft, meat_sqft, coffee_bar, video_store, salad_bar, prepared_food,florist'}
+                       'target_fields': 'store_id, store_type, store_name, store_number, store_street_address, store_city, store_state, store_postal_code, store_country, store_manager, store_phone, store_fax, first_opened_date, last_remodel_date, store_sqft,grocery_sqft, frozen_sqft, meat_sqft, coffee_bar, video_store, salad_bar, prepared_food,florist, effective_date'}
 list_of_dict.append(stores_dict)
 
 
@@ -117,7 +117,7 @@ warehouses_dict = {'insert_date': str(datetime.now()),
                        'destination_connection': 'postgresql',
                        'destination_schema': 'inventory_dwh',
                        'destination_table': 'warehouses', 
-                       'target_fields': 'warehouse_id, stores_id, warehouse_name, wa_address1, wa_address2, wa_address3, wa_address4, warehouse_city, warehouse_state_province, warehouse_postal_code, warehouse_country, warehouse_owner_name, warehouse_phone, warehouse_fax'}
+                       'target_fields': 'warehouse_id, stores_id, warehouse_name, wa_address1, wa_address2, wa_address3, wa_address4, warehouse_city, warehouse_state_province, warehouse_postal_code, warehouse_country, warehouse_owner_name, warehouse_phone, warehouse_fax, effective_date'}
 list_of_dict.append(warehouses_dict)
 
 
@@ -149,7 +149,7 @@ inventory97_dict = {'insert_date': str(datetime.now()),
                        'destination_connection': 'postgresql',
                        'destination_schema': 'inventory_dwh',
                        'destination_table': 'inventory_fact', 
-                       'target_fields': 'product_id, time_id, warehouse_id, store_id, units_ordered, units_shipped, warehouse_sales, warehouse_cost, supply_time, store_invoice, promotion_id'}
+                       'target_fields': 'product_key, time_id, warehouse_key, store_key, units_ordered, units_shipped, warehouse_sales, warehouse_cost, supply_time, store_invoice, promotion_key'}
 list_of_dict.append(inventory97_dict)
 
 
@@ -165,7 +165,7 @@ inventory98_dict = {'insert_date': str(datetime.now()),
                        'destination_connection': 'postgresql',
                        'destination_schema': 'inventory_dwh',
                        'destination_table': '', 
-                       'target_fields': 'product_id, time_id, warehouse_id, store_id, units_ordered, units_shipped, warehouse_sales, warehouse_cost, supply_time, store_invoice, promotion_id'}
+                       'target_fields': 'product_key, time_id, warehouse_key, store_key, units_ordered, units_shipped, warehouse_sales, warehouse_cost, supply_time, store_invoice, promotion_key'}
 list_of_dict.append(inventory98_dict)
 
 for dict in list_of_dict:
